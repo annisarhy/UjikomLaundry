@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1069276195030",
+    "firebase_url": "https://ujikomlaundry.firebaseio.com",
+    "project_id": "ujikomlaundry",
+    "storage_bucket": "ujikomlaundry.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069276195030:android:8ea4388fe05c8eff488177",
+        "android_client_info": {
+          "package_name": "com.example.ujikomlaundry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069276195030-0e8fuat976q00l2d9h18ivph8l5arcjr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ujikomlaundry",
+            "certificate_hash": "40b739a69b2022ec02f51e7c412c1be0242d1311"
+          }
+        },
+        {
+          "client_id": "1069276195030-0ojnum46es4ijrcv6d885svn92t103jh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBruunutVgJxB4puNd5CCxXEVPmAHAbpGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069276195030-0ojnum46es4ijrcv6d885svn92t103jh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
