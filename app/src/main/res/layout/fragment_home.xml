@@ -2,21 +2,217 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:textStyle="bold"
+        android:id="@+id/textOp"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/_25sdp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:text="Home" />
-    <Button
-        android:onClick="logout"
-        android:background="@drawable/bg_btnradius"
-        android:text="Logout"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/logout"/>
+        android:textColor="#000"
+        android:textSize="@dimen/_18ssp"
+        android:text="Silahkan pilih salah satu diantara menu berikut"/>
+
+    <ScrollView
+        android:layout_below="@id/textOp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/rl_pelanggan"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/textOp"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="#FFF"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_img_side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_side2"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginStart="-30dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="Pelanggan"/>
+
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_regist"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/rl_pengguna"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/rl_pelanggan"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="#FFF"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_img_side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_side2"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginStart="-30dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="Pengguna"/>
+
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_45sdp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_pengguna"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/rl_cucian"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/rl_pengguna"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="#FFF"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_img_side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_side2"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginStart="-30dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="Cucian"/>
+
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_barang"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/rl_outlet"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/rl_cucian"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="#FFF"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_gravity="start"
+                        android:src="@drawable/ic_img_side"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <ImageView
+                        android:layout_gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_img_side2"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_marginStart="-30dp"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"
+                        android:textSize="@dimen/_15ssp"
+                        android:text="Outlet"/>
+
+                </androidx.cardview.widget.CardView>
+                <ImageView
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_35sdp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_outlet"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
 
 </RelativeLayout>
