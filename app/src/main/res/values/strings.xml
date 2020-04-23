@@ -3,4 +3,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="cabang_outlet">
+        <item>Bandung</item>
+        <item>Jakarta</item>
+        <item>Surabaya</item>
+        <item>Bogor</item>
+        <item>Depok</item>
+        <item>Tanggerang</item>
+    </string-array>
 </resources>
